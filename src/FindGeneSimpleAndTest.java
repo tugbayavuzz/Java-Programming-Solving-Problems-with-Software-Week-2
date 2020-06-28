@@ -1,10 +1,5 @@
 public class FindGeneSimpleAndTest {
 
-    public static void main(String[] args) {
-        testFindGeneSimple();
-
-    }
-
     public static String findGeneSimple(String dna){
         //start codon is ATG
         //stop codon is TAA
@@ -21,7 +16,7 @@ public class FindGeneSimpleAndTest {
         return result;
     }
     public static void testFindGeneSimple(){
-        String dna = "AATGCGTAATATGGT";
+        String dna = "AATGCTAACTAGCTGACTAAT";
         System.out.println("Dna strand is "+ dna);
         String gene = findGeneSimple(dna);
         System.out.println("Gene strand is "+ gene);
@@ -41,6 +36,10 @@ public class FindGeneSimpleAndTest {
         System.out.println("Dna strand is "+ dna);
         gene = findGeneSimple(dna);
         System.out.println("Gene strand is "+ gene);
+
+    }
+    public static void main(String[] args) {
+        testFindGeneSimple();
 
     }
 
