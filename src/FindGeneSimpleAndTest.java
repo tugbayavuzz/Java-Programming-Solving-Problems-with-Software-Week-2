@@ -26,7 +26,8 @@ public class FindGeneSimpleAndTest {
         String gene = findGeneSimple(dna);
         System.out.println("Gene strand is "+ gene);
 
-        dna = "AATGCGTAATATGGT";
+        dna = "AAATGCCCTAACTAGATTAAGAAACC";
+        dna = dna.toLowerCase();
         System.out.println("Dna strand is "+ dna);
         gene = findGeneSimple(dna);
         System.out.println("Gene strand is "+ gene);
